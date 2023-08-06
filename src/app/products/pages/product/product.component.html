@@ -1,0 +1,21 @@
+
+<div class="m-3 p-3 card">
+
+
+    <div class="card-body">
+
+        <p class="text-center card-title"> C - product works!</p>
+            
+        <app-price *ngIf="isVisible" [price]="price" ></app-price>
+        
+        <button (click)="increasePrice()" class="btn btn-info"> increase +1 </button>
+        
+        <br>
+        <hr>
+        
+        
+        <button (click)="isVisible = !isVisible" class="btn btn-success  me-2"> Toggle  </button>
+        <span style="margin-right: 10px;">{{isVisible}}</span> 
+    </div>
+
+</div>    
